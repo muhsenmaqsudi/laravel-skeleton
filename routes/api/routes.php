@@ -19,3 +19,8 @@ Route::get('/', static fn () => ['ping' => 'pong'])->name('ping');
 Route::prefix('api/v1')
     ->middleware('api')
     ->group(base_path('routes/api/v1/routes.php'));
+
+
+Route::prefix('api/v2')
+    ->middleware('api')
+    ->group(base_path('routes/api/v2/routes.php'));
