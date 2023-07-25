@@ -11,7 +11,7 @@ class PlaceTransactionRequestFactory extends RequestFactory
     {
         return [
             'user_id' => (string)Str::ulid(),
-            'wallet_id' => 2669547896532,
+            'wallet_id' => 688620680101,
             'amount' => $this->faker->randomNumber(6, true),
         ];
     }
